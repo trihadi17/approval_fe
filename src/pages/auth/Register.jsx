@@ -4,27 +4,27 @@ import { Link } from "react-router-dom";
 const Register = () => {
   return (
     <div>
-      <div class="account-pages"></div>
-      <div class="clearfix"></div>
-      <div class="wrapper-page">
-        <div class="text-center">
-          <Link to="/register" class="logo">
+      <div className="account-pages"></div>
+      <div className="clearfix"></div>
+      <div className="wrapper-page">
+        <div className="text-center">
+          <Link to="/register" className="logo">
             <span>
               Appro<span>val</span>
             </span>
           </Link>
-          <h5 class="text-muted mt-0 font-600">Sistem Pengajuan Izin</h5>
+          <h5 className="text-muted mt-0 font-600">Sistem Pengajuan Izin</h5>
         </div>
-        <div class="m-t-40 card-box">
-          <div class="text-center">
-            <h4 class="text-uppercase font-bold mb-0">Register</h4>
+        <div className="m-t-40 card-box">
+          <div className="text-center">
+            <h4 className="text-uppercase font-bold mb-0">Register</h4>
           </div>
-          <div class="p-20">
-            <form class="form-horizontal m-t-20" action="">
-              <div class="form-group ">
-                <div class="col-xs-12">
+          <div className="p-20">
+            <form className="form-horizontal m-t-20" action="">
+              <div className="form-group ">
+                <div className="col-xs-12">
                   <input
-                    class="form-control"
+                    className="form-control"
                     type="email"
                     required=""
                     placeholder="Email"
@@ -32,21 +32,10 @@ const Register = () => {
                 </div>
               </div>
 
-              <div class="form-group ">
-                <div class="col-xs-12">
+              <div className="form-group">
+                <div className="col-xs-12">
                   <input
-                    class="form-control"
-                    type="text"
-                    required=""
-                    placeholder="Username"
-                  />
-                </div>
-              </div>
-
-              <div class="form-group">
-                <div class="col-xs-12">
-                  <input
-                    class="form-control"
+                    className="form-control"
                     type="password"
                     required=""
                     placeholder="Password"
@@ -54,10 +43,67 @@ const Register = () => {
                 </div>
               </div>
 
-              <div class="form-group text-center m-t-40 mb-0">
-                <div class="col-xs-12">
+              <div className="form-group ">
+                <div className="col-xs-12">
+                  <input
+                    className="form-control"
+                    type="text"
+                    required=""
+                    placeholder="Id Card"
+                  />
+                </div>
+              </div>
+
+              <div className="form-group ">
+                <div className="col-xs-12">
+                  <input
+                    className="form-control"
+                    type="text"
+                    required=""
+                    placeholder="Name"
+                  />
+                </div>
+              </div>
+
+              <div className="form-group">
+                <div className="col-xs-12">
+                  <select name="" id="" className="form-control">
+                    <option value="" disabled selected>
+                      Select Gender
+                    </option>
+                    <option value="">Male</option>
+                    <option value="">Female</option>
+                  </select>
+                </div>
+              </div>
+
+              <div className="form-group ">
+                <div className="col-xs-12">
+                  <input
+                    className="form-control"
+                    type="text"
+                    required=""
+                    placeholder="Phone Number"
+                  />
+                </div>
+              </div>
+
+              <div className="form-group">
+                <div className="col-xs-12">
+                  <textarea
+                    name=""
+                    id=""
+                    rows="5"
+                    className="form-control"
+                    placeholder="Address"
+                  ></textarea>
+                </div>
+              </div>
+
+              <div className="form-group text-center m-t-40 mb-0">
+                <div className="col-xs-12">
                   <button
-                    class="btn btn-custom btn-bordred btn-block waves-effect waves-light"
+                    className="btn btn-custom btn-bordred btn-block waves-effect waves-light"
                     type="submit"
                   >
                     Register
@@ -68,11 +114,11 @@ const Register = () => {
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-sm-12 text-center">
-            <p class="text-muted">
+        <div className="row">
+          <div className="col-sm-12 text-center">
+            <p className="text-muted">
               Already have account?
-              <Link to="/login" class="text-primary m-l-5">
+              <Link to="/login" className="text-primary m-l-5">
                 <b>Sign In</b>
               </Link>
             </p>

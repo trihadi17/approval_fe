@@ -6,9 +6,10 @@ import MainLayout from "./pages/layouts/MainLayout";
 import AuthLayout from "./pages/layouts/AuthLayout";
 
 // Pages
-import Beranda from "./pages/Beranda";
-import Tentang from "./pages/Tentang";
-import Kontak from "./pages/Kontak";
+import UserList from "./pages/UserList";
+import UserDetail from "./pages/UserDetail";
+import PermissionList from "./pages/PermissionList";
+import PermissionDetail from "./pages/PermissionDetail";
 
 // Auth
 import Login from "./pages/auth/Login";
@@ -21,9 +22,13 @@ function App() {
       <Routes>
         {/* Main Layout (Tampilan Jika Sudah Login) */}
         <Route element={<MainLayout />}>
-          <Route path="/" element={<Beranda />}></Route>
-          <Route path="/tentang" element={<Tentang />}></Route>
-          <Route path="/kontak" element={<Kontak />}></Route>
+          <Route path="/" element={<UserList />}></Route>
+          <Route path="/user/detail" element={<UserDetail />}></Route>
+          <Route path="/permission" element={<PermissionList />}></Route>
+          <Route
+            path="/permission/detail"
+            element={<PermissionDetail />}
+          ></Route>
         </Route>
 
         {/* Auth Layout (Login, Register) */}

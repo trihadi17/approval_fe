@@ -55,19 +55,13 @@ const Header = () => {
             <ul className="navigation-menu">
               <li className="has-submenu">
                 <Link to="/">
-                  <i className="mdi mdi-view-dashboard"></i>
-                  <span> Beranda </span>
+                  <i className="fa fa-users"></i>
+                  <span> Users </span>
                 </Link>
               </li>
               <li className="has-submenu">
-                <Link to="/tentang">
-                  <i className="mdi mdi-cart"></i> <span> Tentang </span>
-                </Link>
-              </li>
-              <li className="has-submenu">
-                <Link to="/kontak">
-                  <i className="mdi mdi-account-card-details"></i>
-                  <span> Kontak </span>
+                <Link to="/permission">
+                  <i className="fa fa-wpforms"></i> <span> Permissions </span>
                 </Link>
               </li>
             </ul>

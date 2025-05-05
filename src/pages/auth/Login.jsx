@@ -25,7 +25,7 @@ const Login = () => {
                 <div className="col-xs-12">
                   <input
                     className="form-control"
-                    type="text"
+                    type="email"
                     required=""
                     placeholder="Email"
                   />
